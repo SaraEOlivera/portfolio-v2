@@ -41,14 +41,27 @@
 
 
 /*Responsive area*/
+
+@media all and (max-width: 992px) {
+    .btn-menu i{
+        border: 2px solid var(--color-letra);
+        border-radius: 7px;
+        font-size: 30px;
+    }
+}
+
 @media all and (max-width:768px){
     .navbar-collapse {
         justify-content: start;
     }
+}
 
-    .navbar-toggler {
-        border: 2px solid var(--color-letra);
+@media all and (max-width: 320px){
+    .navbar-brand {  
+        margin: auto;
+        padding: 10px 0;
     }
+
 }
 /*
 
