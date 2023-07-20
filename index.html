@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara E. Olivera">
+    <meta name="description" content="Un portfolio simple con HTML y CSS">
+    <meta name="keywords" content="HTML, CSS, Git, Github, Bootstrap">
     <title>Portfolio simple</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Tab Logo -->
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <!-- Estilos CSS     -->
     <link rel="stylesheet" href="style.css">
 
@@ -16,18 +23,19 @@
     <header>
         <div class="container header-container">
             <nav class="nav-bar">
-                    <a id="frontEnd" href="index.html">Front-End</a>
-                    <a href="#tecnologias">Tecnologías</a>
-                    <a href="#contacto">Contacto</a>
-                    <a href="sobremi.html">Sobre mí</a>
+                <a id="frontEnd" href="index.html">Front-End</a>
+                <a href="#tecnologias">Tecnologías</a>
+                <a href="#contacto">Contacto</a>
+                <a href="sobremi.html">Sobre mí</a>
             </nav>
         </div>
     </header> 
 
-<!-- ---------------------------------------------------------------------------------->
-
-    <main>
+    <section class="hero">
         <div class="fondo"></div>
+    </section>
+
+    <section class="technologies">
         <div id="tecnologias" class="tecnologias">
             <p>Tecnologías</p>
         </div>
@@ -45,12 +53,11 @@
                 <img src="images/javascript.svg" alt="Logo JS" class="lgje">
                 <p>Javascript</p>
             </div>
-        </div>        
-    </main>
-    
-<!-- ------------------------------------------------------------------------------------- -->
+        </div> 
 
-    <section>
+    </section>
+    
+    <section class="contacto-form">
         <form id="contacto" class="contacto">
             <legend class="titulo">Contacto</legend>
             <div>
@@ -73,8 +80,6 @@
             </div>
         </form>
     </section>
-
-<!-- -------------------------------------------------------------------------------------------- -->
 
     <footer>
         <div>
