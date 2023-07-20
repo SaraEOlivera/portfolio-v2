@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio simple</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <!-- Estilos CSS     -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <nav class="nav-bar">
+                    <a id="frontEnd" href="index.html">Front-End</a>
+                    <a href="#tecnologias">Tecnologías</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="sobremi.html">Sobre mí</a>
+            </nav>
+        </div>
+    </header> 
+
+<!-- ---------------------------------------------------------------------------------->
+
+    <main>
+        <div class="fondo"></div>
+        <div id="tecnologias" class="tecnologias">
+            <p>Tecnologías</p>
+        </div>
+        <div class="container img-container">
+
+            <div class="logos">
+                <img src="images/html.svg" alt="Logo HTML5" class="lgje">
+                <p>HTML 5</p>
+            </div>
+            <div class="logos">
+                <img src="images/css.svg" alt="Logo CSS3" class="lgje">
+                <p>CSS 3</p>
+            </div>
+            <div class="logos">
+                <img src="images/javascript.svg" alt="Logo JS" class="lgje">
+                <p>Javascript</p>
+            </div>
+        </div>        
+    </main>
+    
+<!-- ------------------------------------------------------------------------------------- -->
+
+    <section>
+        <form id="contacto" class="contacto">
+            <legend class="titulo">Contacto</legend>
+            <div>
+                <label for="name">Tu nombre</label>
+                <input type="text" value="" required>
+            </div>
+
+            <div>
+                <label for="email">Tu Email</label>
+                <input type="text" value="" required>
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" rows="6" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar Mensaje">
+            </div>
+        </form>
+    </section>
+
+<!-- -------------------------------------------------------------------------------------------- -->
+
+    <footer>
+        <div>
+            <p class="copy">Copyright &copy; <a target="_blank" href="https://github.com/SaraEOlivera"> Sara Elisa Olivera</a>2023</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
