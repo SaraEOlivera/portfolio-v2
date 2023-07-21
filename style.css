@@ -7,8 +7,6 @@
     --medidia-tablet: 750px
 }
 
-
-
 body {
     width: var(--medida-desk);
     margin: auto;
@@ -46,6 +44,8 @@ body {
     color: var(--background-seccion);
 }
 
+
+/* Header */
 .header-container {
     height: 700px;
     background-color: var(--background-seccion);
@@ -64,26 +64,33 @@ header img {
     mix-blend-mode: multiply;
 }
 
-.titulo-header {
+.titulo-gral {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5rem;
-    color: var(--background-extremos);
 }
 
-.divisorio {
+.titulo-header {
+    color: var(--background-extremos);
+
+}
+
+.divisorio-gral {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     padding-top: 30px;
 }
 
-.linea {
-    width: 180px;
+.linea-gral {
     height: 0px;
+}
+
+.linea-header {
+    width: 230px;
     border: 3px solid var(--background-extremos);
 }
 
-.divisorio i {
+.divisorio-gral i {
     color: var(--background-extremos);
     font-size: 40px;
     padding: 35px;
@@ -95,6 +102,55 @@ header img {
     font-size: 1.5rem;
     padding-top: 35px;
 }
+
+/* Seccion de proyectos */
+.proyectos {
+    height: 900px;
+    width: var(--medida-desk);
+    background-color: var(--color-letra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-seccion {
+    color: var(--background-seccion);
+    text-align: center;
+    padding-top: 120px;
+}
+
+.linea-seccion {
+    width: 100px;
+    border: 3px solid var(--background-seccion);
+}
+
+.proyectos .divisorio-seccion i {
+    color: var(--background-seccion);
+    font-size: 40px;
+    padding: 35px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 50px;
+
+}
+.proyecto-gral {
+    height: 230px;
+    flex: 30%;
+    max-width: 30%;
+    border: 2px solid var(--background-seccion);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+
+
+
+
 
 /*Responsive area*/
 @media all and (min-width: 768px) and (max-width: 1200px) {
@@ -114,7 +170,25 @@ header img {
     .navbar-collapse {
         justify-content: start;
     }
-/*      Hasta aca el responsive aplicado en el header 1200 - 768      */    
+
+    /* Seccion de proyectos */
+    .proyectos {
+        width: var(--medidia-tablet);
+        height:1200px;
+    }
+
+    .contenedor-proyectos {
+        width: 100%;
+    }
+
+    .proyecto-gral {
+        height: 230px;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    /*    Hasta aca el responsive aplicado en proyectos sin contenido 1200 - 768   */ 
+
 }
 
 
@@ -136,8 +210,32 @@ header img {
         justify-content: start;
     }
 
-/*        Hasta aca el responsive aplicado en el header  768 520      */    
+    /* Header */            
+    .linea-header {
+        width: 170px;
+    }
+    
+    .texto-header {
+        padding-top: 40px;
+    }
 
+    /* Seccion de proyectos */
+    .proyectos {
+        height: 2000px;
+        width: 100%;
+    }
+
+    .contenedor-proyectos {
+        width: 100%;
+    }
+
+    .proyecto-gral {
+        height: 230px;
+        flex: 90%;
+        max-width: 90%;
+    }  
+
+/*     Hasta aca el responsive aplicado a proyectos sin contenido  768 520   */ 
 }
 
 
@@ -163,18 +261,56 @@ header img {
         justify-content: start;
     }
 
-    .titulo-header {
+    /* Header */
+
+    .header-container {
+        height: 700px;
+        width: 100%;
+    }
+    
+    .titulo-gral {
         font-size: 2.5rem;
     }
-
-    .linea {
+    
+    .linea-header {
         width: 100px;
     }
-
+    
+    .divisorio-gral i {
+        color: var(--background-extremos);
+        font-size: 40px;
+        padding: 35px;
+    }
+    
     .texto-header {
         font-size: 1.8rem;
+        padding-top: 40px;
     }
-/*        Hasta aca el responsive aplicado en el header  320 - 519      */    
+
+
+    /* Seccion de proyectos */
+    .proyectos {
+        height: 2000px;
+        width: 100%;
+    }
+
+    .linea-seccion {
+        width: 50px;
+    }   
+
+    .contenedor-proyectos {
+        width: 100%;
+        padding: 50px 5px;
+    }
+
+    .proyecto-gral {
+        height: 230px;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+/*    Hasta aca el responsive aplicado a proyectos sin contenido  320 - 519    */ 
+
 
 }
 
