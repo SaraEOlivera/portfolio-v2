@@ -1,18 +1,24 @@
 /* Variables */
 :root {
     --color-letra : #f2f2f2;
-    --background-extremos: #3b4457;
+    --background-extremos: #32384d;
+    --background-seccion: #e29930;
+    --medida-desk: 1200px;
+    --medidia-tablet: 750px
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+
+body {
+    width: var(--medida-desk);
+    margin: auto;
+}
 .navbar {
     padding: 2rem;
-    background-color: var(--background-extremos)
+    background-color: var(--background-extremos);
+    width: var(--medida-desk);
+    margin: auto;
+    
 }
 
 .navbar-collapse {
@@ -36,13 +42,152 @@
     font-size: 1.2em;
 }
 
+.nav-link:hover {
+    color: var(--background-seccion);
+}
+
+.header-container {
+    height: 700px;
+    background-color: var(--background-seccion);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    padding: 30px;
+    padding-top: 50px;
+    width: 300px;
+    height: 200px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.titulo-header {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.5rem;
+    color: var(--background-extremos);
+}
+
+.divisorio {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 30px;
+}
+
+.linea {
+    width: 180px;
+    height: 0px;
+    border: 3px solid var(--background-extremos);
+}
+
+.divisorio i {
+    color: var(--background-extremos);
+    font-size: 40px;
+    padding: 35px;
+}
+
+.texto-header {
+    color: var(--background-extremos);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 35px;
+}
+
+/*Responsive area*/
+@media all and (min-width: 768px) and (max-width: 1200px) {
+
+    body {
+        width: var(--medidia-tablet);
+    }
+
+    .navbar {
+        width: var(--medidia-tablet);
+    }
+
+    .btn-menu i{
+        font-size: 40px;
+    }
+
+    .navbar-collapse {
+        justify-content: start;
+    }
+/*      Hasta aca el responsive aplicado en el header 1200 - 768      */    
+}
+
+
+@media all and (min-width: 520px) and (max-width: 767px){
+    
+    body {
+        width: 100%;
+    }
+    .navbar {
+        padding: 2rem;
+        width: 100%;        
+    }
+    
+    .btn-menu i{
+        font-size: 40px;
+    }
+
+    .navbar-collapse {
+        justify-content: start;
+    }
+
+/*        Hasta aca el responsive aplicado en el header  768 520      */    
+
+}
+
+
+@media all and  (min-width: 320px) and (max-width: 519px){
+
+    body {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;   
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .btn-menu i{
+        font-size: 40px;
+    }
+
+    .navbar-collapse {
+        padding-top: 30px;
+        justify-content: start;
+    }
+
+    .titulo-header {
+        font-size: 2.5rem;
+    }
+
+    .linea {
+        width: 100px;
+    }
+
+    .texto-header {
+        font-size: 1.8rem;
+    }
+/*        Hasta aca el responsive aplicado en el header  320 - 519      */    
+
+}
+
+
+
+
 
 
 
 
 /*Responsive area*/
 
-@media all and (max-width: 992px) {
+/* @media all and (max-width: 992px) {
     .btn-menu i{
         border: 2px solid var(--color-letra);
         border-radius: 7px;
@@ -51,18 +196,40 @@
 }
 
 @media all and (max-width:768px){
+    body {
+        width: 100%;
+    }
     .navbar-collapse {
         justify-content: start;
     }
 }
 
+@media all and (max-width: 584px){
+    body {
+        width: 100%;
+    }
+
+    .header-container {
+        padding-top: 80px;
+    }
+
+}
+@media all and  (max-width: 470px){
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+
+}
 @media all and (max-width: 320px){
     .navbar-brand {  
         margin: auto;
         padding: 10px 0;
     }
 
-}
+} */
 /*
 
 
