@@ -11,12 +11,12 @@ body {
     width: var(--medida-desk);
     margin: auto;
 }
+
 .navbar {
     padding: 2rem;
     background-color: var(--background-extremos);
     width: var(--medida-desk);
-    margin: auto;
-    
+    margin: auto;   
 }
 
 .navbar-collapse {
@@ -46,7 +46,7 @@ body {
 
 
 /* Header */
-.header-container {
+.header-container, .sobre-mi {
     height: 700px;
     background-color: var(--background-seccion);
     display: flex;
@@ -69,7 +69,7 @@ header img {
     font-size: 3.5rem;
 }
 
-.titulo-header {
+.titulo-oscuro {
     color: var(--background-extremos);
 
 }
@@ -113,7 +113,7 @@ header img {
     align-items: center;
 }
 
-.titulo-seccion {
+.titulo-claro {
     color: var(--background-seccion);
     text-align: center;
     padding-top: 120px;
@@ -179,32 +179,82 @@ header img {
     }
 }
 
+/* Seccion sobre mi */
 
-
-
-
-
-
-
-
-
-
-
-
-/* .icono-proyecto {
-    transition: all .2s ease;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.sobre-mi .titulo-oscuro {
+    padding-top: 120px;
+    padding-bottom: 0px;
 }
 
-.icono-proyecto i {
-    color: black;
-    margin: 10px;
-    font-size: 60px;
-} */
+.sobre-mi .divisorio-gral {
+    padding-top: 0px;
+}
+.sobre-mi .linea-gral {
+    width: 100px;
+}
+
+.contenedor-seccion-sobremi {
+    padding: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    color: var(--background-extremos);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 70%;
+    overflow: visible;
+}
+
+.contenedor-seccion-sobremi p {
+    padding: 25px;
+}
+
+.contenedor-descarga {
+    border: 2px solid var(--background-extremos);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contenedor-descarga:hover {
+    background-color: var(--background-extremos);
+    .link-descarga {
+        color: var(--background-seccion);
+    }
+}
+
+.contenedor-descarga:hover i {
+    color: var(--background-seccion);
+}
+
+.contenedor-descarga i, .link-descarga {
+    text-decoration: none;
+    color: var(--background-extremos);
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 7px;
+
+}
+.link-descarga {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
