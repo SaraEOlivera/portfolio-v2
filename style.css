@@ -4,7 +4,7 @@
     --background-extremos: #32384d;
     --background-seccion: #e29930;
     --medida-desk: 1200px;
-    --medidia-tablet: 750px
+    --medida-tablet: 750px
 }
 
 body {
@@ -247,33 +247,15 @@ header img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsive area*/
+/*Responsive Area*/
 @media all and (min-width: 768px) and (max-width: 1200px) {
 
     body {
-        width: var(--medidia-tablet);
+        width: var(--medida-tablet);
     }
 
     .navbar {
-        width: var(--medidia-tablet);
+        width: var(--medida-tablet);
     }
 
     .btn-menu i{
@@ -286,7 +268,7 @@ header img {
 
     /* Seccion de proyectos */
     .proyectos {
-        width: var(--medidia-tablet);
+        width: var(--medida-tablet);
         height:1200px;
     }
 
@@ -300,7 +282,23 @@ header img {
         max-width: 50%;
     }
 
-    /*    Hasta aca el responsive aplicado en proyectos sin contenido 1200 - 768   */ 
+    /* Seccion sobre mi */
+    .sobre-mi {
+        width: var(--medida-tablet);
+        height: 900px;
+    }
+
+    .sobre-mi .titulo-oscuro {
+        padding-top: 50px;
+    }
+
+    .contenedor-seccion-sobremi {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*    Hasta aca el responsive aplicado en sobre-mi y proyectos 1200 - 768   */ 
 
 }
 
@@ -334,23 +332,58 @@ header img {
 
     /* Seccion de proyectos */
     .proyectos {
-        height: 2000px;
+        height: 2250px;
         width: 100%;
+    }
+
+    .linea-seccion {
+        width: 130px;
     }
 
     .contenedor-proyectos {
-        width: 100%;
+        width: 80%;
+        padding: 35px;
+        margin: auto;
     }
 
     .proyecto-gral {
-        height: 230px;
-        flex: 90%;
+        height: 320px;
+        flex: 80%;
         max-width: 90%;
-    }  
+        margin: 0px auto;
+    }
 
-/*     Hasta aca el responsive aplicado a proyectos sin contenido  768 520   */ 
+    .img-proyecto {
+        max-height: 320px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .proyecto {
+        position: relative;
+    }
+
+    .icono-proyecto {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+    }
+
+    /* Seccion Sobre-mi */
+    .sobre-mi {
+        width: 100%;
+        height: 950px;
+    }
+
+    .contenedor-seccion-sobremi {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+/*     Hasta aca el responsive aplicado a proyectos sobre-mi  768 520   */
+
 }
-
 
 @media all and  (min-width: 320px) and (max-width: 519px){
 
@@ -400,94 +433,68 @@ header img {
         padding-top: 40px;
     }
 
-
     /* Seccion de proyectos */
     .proyectos {
-        height: 2000px;
+        height: 2200px;
         width: 100%;
     }
 
     .linea-seccion {
-        width: 50px;
+        width: 100px;
     }   
 
     .contenedor-proyectos {
         width: 100%;
-        padding: 50px 5px;
+        padding: 50px 3px;
     }
 
     .proyecto-gral {
-        height: 230px;
+        max-height: 300px;
+        height: 300px;
         flex: 100%;
-        max-width: 100%;
+        max-width: 400px;
+        margin: auto;
     }
 
-/*    Hasta aca el responsive aplicado a proyectos sin contenido  320 - 519    */ 
-
-
-}
-
-
-
-
-
-
-
-
-/*Responsive area*/
-
-/* @media all and (max-width: 992px) {
-    .btn-menu i{
-        border: 2px solid var(--color-letra);
-        border-radius: 7px;
-        font-size: 30px;
-    }
-}
-
-@media all and (max-width:768px){
-    body {
+    .img-proyecto {
         width: 100%;
+        height: auto;
+        max-height: 300px;
     }
-    .navbar-collapse {
-        justify-content: start;
-    }
-}
 
-@media all and (max-width: 584px){
-    body {
+    .icono-proyecto {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    /* Seccion sobre mi */
+    .sobre-mi{
         width: 100%;
+        height: auto;
     }
 
-    .header-container {
+    .sobre-mi .titulo-oscuro {
         padding-top: 80px;
     }
 
-}
-@media all and  (max-width: 470px){
-    body {
-        width: 100%;
-    }
-    header {
-        width: 100%;
-    }
-
-}
-@media all and (max-width: 320px){
-    .navbar-brand {  
-        margin: auto;
-        padding: 10px 0;
-    }
-
-} */
-/*
-
-
-@media(max-width: 480px) {
-    .nav-bar{
-        height: auto;
+    .contenedor-seccion-sobremi {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        background-color: var(--negro);
+        width: 100%;
+        padding: 5px;
     }
-} /*
+
+    .contenedor-seccion-sobremi p {
+        width: 100%;
+    }
+
+    .contenedor-descarga {
+        padding-top: 5px;
+        margin-bottom: 30px;
+    }
+
+/*    Hasta aca el responsive aplicado a sobre-mi  320 - 519    */
+
+}
+
