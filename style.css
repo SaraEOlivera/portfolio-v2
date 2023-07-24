@@ -141,11 +141,74 @@ header img {
     height: 230px;
     flex: 30%;
     max-width: 30%;
-    border: 2px solid var(--background-seccion);
-    border-radius: 10px;
     margin: auto;
     margin-bottom: 35px;
 }
+
+.img-proyecto {
+    border-radius: 10px;
+    border: 3px solid var(--background-seccion);
+    transition: 0.6s;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.icono-proyecto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 0.6s;
+}
+
+.icono-proyecto i {
+    color: var(--background-seccion);
+    font-size: 60px;
+}
+
+.proyecto:hover {
+
+    .img-proyecto {
+        opacity: 0.1;
+    }
+    .icono-proyecto {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .icono-proyecto {
+    transition: all .2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.icono-proyecto i {
+    color: black;
+    margin: 10px;
+    font-size: 60px;
+} */
+
+
+
+
 
 
 
