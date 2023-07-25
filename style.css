@@ -316,6 +316,44 @@ input:focus, input.form-control:focus, textarea.form-control:focus {
     font-size: 1.2rem;
 }
 
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: var(--background-extremos);
+    width: var(--medida-desk);
+    margin: auto;   
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.contenedor-footer p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--color-letra);
+}
+
+.contenedor-footer p:hover{
+    color: var(--background-seccion);
+}
+
+.redes a {
+    padding: 20px;
+    color: var(--color-letra);
+}
+
+.redes a i {
+    font-size: 20px;
+    transition: all 0.6ms;
+}
+
+.redes a i:hover {
+    color: var(--background-seccion);
+}
+
 
 /*Responsive Area*/
 @media all and (min-width: 768px) and (max-width: 1200px) {
@@ -378,9 +416,25 @@ input:focus, input.form-control:focus, textarea.form-control:focus {
         width: 90%;
     }
     /*    Hasta aca el responsive aplicado en contacto 1200 - 768   */ 
+    /* Footer */
+    footer {
+        width: var(--medida-tablet);
+    }
 
+    .contenedor-footer {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .contenedor-footer p {
+        margin: auto;
+    }
+
+    .redes a {
+        padding: 0 20px;
+    }
 }
-
 
 @media all and (min-width: 520px) and (max-width: 767px){
     
@@ -470,8 +524,22 @@ input:focus, input.form-control:focus, textarea.form-control:focus {
     .formulario {
         width: 90%;
     }
-/*     Hasta aca el responsive aplicado a contacto  767 520   */
 
+    /* Footer */
+    footer {
+        width: 100%;
+        /* margin: auto; */
+    }
+
+    .contenedor-footer {
+        justify-content: space-around;
+        align-items:last baseline;
+        padding: 20px;
+    }
+
+    .redes a {
+        padding: 0 20px;
+    }
 }
 
 @media all and  (min-width: 320px) and (max-width: 519px){
@@ -583,7 +651,6 @@ input:focus, input.form-control:focus, textarea.form-control:focus {
         margin-bottom: 30px;
     }
 
-/*    Hasta aca el responsive aplicado a sobre-mi  320 - 519    */
     /* Seccion contacto */
     .contacto {
         width: 100%;
@@ -595,6 +662,18 @@ input:focus, input.form-control:focus, textarea.form-control:focus {
         margin: auto;
     }
 
+    /* Footer */
+    footer {
+        width: 100%;
+        margin: auto;   
+    }
 
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 30px;
+    }
 }
 
