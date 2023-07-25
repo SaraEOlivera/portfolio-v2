@@ -135,7 +135,6 @@ header img {
     flex-wrap: wrap;
     width: 90%;
     padding: 50px;
-
 }
 .proyecto-gral {
     height: 230px;
@@ -180,6 +179,10 @@ header img {
 }
 
 /* Seccion sobre mi */
+
+.sobre-mi {
+    height: 750px;
+}
 
 .sobre-mi .titulo-oscuro {
     padding-top: 120px;
@@ -245,6 +248,73 @@ header img {
     text-decoration: none;
 }
 
+/* Seccion contacto */
+.contacto {
+    width: var(--medida-desk);
+    height: 960px;
+    background-color: var(--color-letra);
+}
+
+.contacto .divisorio-gral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 30px;
+}
+
+.contacto .divisorio-seccion i {
+    color: var(--background-seccion);
+    font-size: 40px;
+    padding: 35px;
+}
+
+.formulario {
+    width: 50%;
+    margin: auto;
+}
+
+.formulario label {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--background-seccion);
+    font-size: 1.2rem;
+}
+
+.formulario input, .formulario textarea {
+    background-color: var(--color-letra);
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--background-seccion);
+    margin-bottom: 35px;
+    padding-top: 2px;
+    outline: none;
+}
+
+/* Sacar el focus azul predeterminado */
+input:focus, input.form-control:focus, textarea.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: var(--color-letra);
+    border-bottom: 4px solid var(--background-seccion);
+}
+
+.formulario textarea {
+    height: 150px;
+}
+
+.formulario .btn-contacto {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--color-letra);
+    background-color: var(--background-seccion);
+    width: 90px;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1.2rem;
+}
 
 
 /*Responsive Area*/
@@ -298,7 +368,16 @@ header img {
         width: 100%;
     }
 
-    /*    Hasta aca el responsive aplicado en sobre-mi y proyectos 1200 - 768   */ 
+    /* Seccion contacto */
+    .contacto {
+        width:100%;
+        height: 960px;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+    /*    Hasta aca el responsive aplicado en contacto 1200 - 768   */ 
 
 }
 
@@ -381,7 +460,17 @@ header img {
         flex-direction: column;
         width: 100%;
     }
-/*     Hasta aca el responsive aplicado a proyectos sobre-mi  768 520   */
+
+    /* Seccion contacto */
+    .contacto {
+        width: 100%;
+        height: 960px;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+/*     Hasta aca el responsive aplicado a contacto  767 520   */
 
 }
 
@@ -495,6 +584,17 @@ header img {
     }
 
 /*    Hasta aca el responsive aplicado a sobre-mi  320 - 519    */
+    /* Seccion contacto */
+    .contacto {
+        width: 100%;
+        height: 960px;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: auto;
+    }
+
 
 }
 
